@@ -1,0 +1,17 @@
+rules:
+  - id: aws-access-key
+    regex: "AKIA[0-9A-Z]{16}"
+    type: "AWS Access Key"
+    confidence: "High"
+  - id: gcp-api-key
+    regex: "AIza[0-9A-Za-z\\-_]{35}"
+    type: "Google Cloud API Key"
+    confidence: "High"
+  - id: private-key
+    regex: "-----BEGIN RSA PRIVATE KEY-----"
+    type: "Private Key"
+    confidence: "High"
+  - id: generic-api-key
+    regex: "[Aa][Pp][Ii]_?[Kk][Ee][Yy]\\s*[:=]\\s*['\\\"]?[0-9a-zA-Z]{32,45}['\\\"]?"
+    type: "Generic API Key"
+    confidence: "Medium"
