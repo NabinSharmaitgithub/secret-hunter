@@ -26,8 +26,7 @@ If you are fetching a remote source, you will also be required to confirm the li
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/secret-hunter.git
-   cd secret-hunter
+   git clone https://github.com/NabinSharmaitgithub/secret-hunter.git
    ```
 
 2. Install the dependencies:
